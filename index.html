@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>To-Do List</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+        <div class="task-input">
+            <input type="text" id="task-name" placeholder="Enter new task">
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <select id="category">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            <input type="date" id="due-date">
+            <button id="add-task">Add Task</button>
+        </div>
+        <div class="task-list"></div>
+        <div id="progress">
+            <h3>Progress</h3>
+            <progress id="task-progress" value="0" max="100"></progress>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

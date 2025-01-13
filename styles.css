@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#theme-toggle {
+    margin-bottom: 20px;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#task-name, #priority, #category, #due-date {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-task {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+#add-task:hover {
+    background-color: #45a049;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+#progress {
+    margin-top: 20px;
+}
+
+progress {
+    width: 100%;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.app-container.dark-mode {
+    background-color: #444;
+    color: white;
+}
+
+button.dark-mode {
+    background-color: #555;
+    color: white;
+}
+
+.task-list .task.dark-mode {
+    background-color: #555;
+    color: white;
+}
